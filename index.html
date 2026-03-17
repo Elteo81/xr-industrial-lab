@@ -9,34 +9,12 @@
       <!-- PISO -->
       <a-plane rotation="-90 0 0" width="20" height="20" color="#888888"></a-plane>
 
-      <!-- TANQUE PRINCIPAL (cilindro grande) -->
-      <a-cylinder position="0 2 -5" radius="1.5" height="4" color="#4A90D9"></a-cylinder>
+      <!-- MODELO CAD -->
+      <a-assets>
+        <a-asset-item id="modeloIndustrial" src="models/modelo.glb"></a-asset-item>
+      </a-assets>
 
-      <!-- TAPA SUPERIOR DEL TANQUE -->
-      <a-cylinder position="0 4.1 -5" radius="1.6" height="0.2" color="#2C5F8A"></a-cylinder>
-
-      <!-- TAPA INFERIOR DEL TANQUE -->
-      <a-cylinder position="0 0.1 -5" radius="1.6" height="0.2" color="#2C5F8A"></a-cylinder>
-
-      <!-- TUBERÍA HORIZONTAL -->
-      <a-cylinder position="2 1 -5" radius="0.15" height="2.5" 
-                  rotation="0 0 90" color="#B0B0B0"></a-cylinder>
-
-      <!-- TUBERÍA VERTICAL (salida) -->
-      <a-cylinder position="3.2 0.5 -5" radius="0.15" height="1" 
-                  color="#B0B0B0"></a-cylinder>
-
-      <!-- VÁLVULA (esfera roja) -->
-      <a-sphere position="2 1 -5" radius="0.25" color="#E74C3C"></a-sphere>
-
-      <!-- SOPORTE IZQUIERDO -->
-      <a-box position="-1 0.5 -5" width="0.2" height="1" depth="0.2" color="#555555"></a-box>
-
-      <!-- SOPORTE DERECHO -->
-      <a-box position="1 0.5 -5" width="0.2" height="1" depth="0.2" color="#555555"></a-box>
-
-      <!-- SENSOR INDICADOR (esfera verde) -->
-      <a-sphere position="-1.6 3 -5" radius="0.2" color="#2ECC71"></a-sphere>
+      <a-entity gltf-model="#modeloIndustrial" position="0 0 -5" scale="1 1 1"></a-entity>
 
       <!-- CIELO -->
       <a-sky color="#D0E8F0"></a-sky>
